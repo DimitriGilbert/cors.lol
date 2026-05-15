@@ -1,0 +1,8 @@
+services:
+  cors-lol:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "31336:8080"
+    restart: unless-stopped
